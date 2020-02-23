@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import * as S from './styles'
 import PropTypes from "prop-types"
 
-import { navMode } from '../../state/nav'
+import { navMode } from '../../state/reducers/nav'
 
 const Nav = ({ indiceNav , dispatch , setaPrev , setaNext }) => {
 

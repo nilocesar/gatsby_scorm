@@ -1,8 +1,5 @@
-// import { navigate } from "gatsby"
-
-
 const initialState = {
-  scormType: "go", 
+  scormType: "", 
   indiceNav: 1
 };
 

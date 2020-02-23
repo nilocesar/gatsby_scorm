@@ -7,8 +7,8 @@ import SEO from "../../components/seo"
 
 import * as S from '../../styles/aa1'
 
-import { navMode } from '../../state/nav'
-import { scormMode } from '../../state/scorm'
+import { navMode } from '../../state/reducers/nav'
+// import { scormMode } from '../../state/reducers/scorm'
 
 const Aa1 = ({ indiceNav , dispatch }) => {
 

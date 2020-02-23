@@ -1,9 +1,31 @@
 import React from 'react';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { createStore as reduxCreateStore } from 'redux';
-import rootReducer from '.';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-const createStore = () => reduxCreateStore(rootReducer);
+import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
+import rootReducer from '.'; // the value from combineReducers
+
+const persistConfig = {
+ key: 'root',
+ storage: storage,
+ stateReconciler: autoMergeLevel2 // see "Merge Process" section for details.
+};
+
+const pReducer = persistReducer(persistConfig, rootReducer);
+
+const store = createStore(pReducer);
+const persistor = persistStore(store);
+
+
 export default ({ element }) => (
-  <Provider store={createStore()}>{element}</Provider>
-);
+  <Provider store={store}>
+    
+    <PersistGate loading={null} persistor={persistor}>
+      {element}
+    </PersistGate>
+
+  </Provider>
+)

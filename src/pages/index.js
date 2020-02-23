@@ -1,13 +1,15 @@
 import React from "react"
-// import React, { useState, useEffect } from "react"
+import { connect } from 'react-redux';
 import {  navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => {
+//import { navMode } from '../state/reducers/nav'
 
-  navigate('/Aa1/');
+const IndexPage = ({ indiceNav , dispatch }) => {
+  
+  navigate('/Aa'+ indiceNav + "/");
   
   
   return (
@@ -17,4 +19,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default connect( state => ({indiceNav: state.nav.indiceNav }) , null )( IndexPage )
