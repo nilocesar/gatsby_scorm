@@ -1,0 +1,167 @@
+
+/*==============================================================================
+  Família cliente
+==============================================================================*/
+
+@font-face {
+    font-family: 'book';
+    src: url('../../fonts/cliente/Formata-Regular.eot');
+    src: url('../../fonts/cliente/Formata-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/Formata-Regular.woff') format('woff'),
+         url('../../fonts/cliente/Formata-Regular.ttf') format('truetype'),
+         url('../../fonts/cliente/Formata-Regular.svg#webfontiD0t8Rg6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../../fonts/cliente/Formata-Light.eot');
+    src: url('../../fonts/cliente/Formata-Light.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/Formata-Light.woff') format('woff'),
+         url('../../fonts/cliente/Formata-Light.ttf') format('truetype'),
+         url('../../fonts/cliente/Formata-Light.svg#webfontZyy4cpE6') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'light_italic';
+    src: url('../../fonts/cliente/Formata-LightItalic.eot');
+    src: url('../../fonts/cliente/Formata-LightItalic.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/Formata-LightItalic.woff') format('woff'),
+         url('../../fonts/cliente/Formata-LightItalic.ttf') format('truetype'),
+         url('../../fonts/cliente/Formata-LightItalic.svg#webfontZyy4cpE6') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'bold';
+    src: url('../../fonts/cliente/Formata-Bold.eot');
+    src: url('../../fonts/cliente/Formata-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/Formata-Bold.woff') format('woff'),
+         url('../../fonts/cliente/Formata-Bold.ttf') format('truetype'),
+         url('../../fonts/cliente/Formata-Bold.svg#webfontZyy4cpE6') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bold_italic';
+    src: url('../../fonts/cliente/Formata-BoldItalic.eot');
+    src: url('../../fonts/cliente/Formata-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/cliente/Formata-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/cliente/Formata-BoldItalic.woff') format('woff'),
+        url('../../fonts/cliente/Formata-BoldItalic.ttf') format('truetype'),
+        url('../../fonts/cliente/Formata-BoldItalic.svg#Formata-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+/*==============================================================================
+  Família cliente
+==============================================================================*/
+
+@font-face {
+    font-family: 'tblack';
+    src: url('../../fonts/cliente/TheMixBlack-Caps.eot');
+    src: url('../../fonts/cliente/TheMixBlack-Caps.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/TheMixBlack-Caps.woff') format('woff'),
+         url('../../fonts/cliente/TheMixBlack-Caps.ttf') format('truetype'),
+         url('../../fonts/cliente/TheMixBlack-Caps.svg#webfontiD0t8Rg6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tlight';
+    src: url('../../fonts/cliente/TheMixLight-Caps.eot');
+    src: url('../../fonts/cliente/TheMixLight-Caps.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/TheMixLight-Caps.woff') format('woff'),
+         url('../../fonts/cliente/TheMixLight-Caps.ttf') format('truetype'),
+         url('../../fonts/cliente/TheMixLight-Caps.svg#webfontZyy4cpE6') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tbold';
+    src: url('../../fonts/cliente/TheMixSemiBold-Caps.eot');
+    src: url('../../fonts/cliente/TheMixSemiBold-Caps.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/TheMixSemiBold-Caps.woff') format('woff'),
+         url('../../fonts/cliente/TheMixSemiBold-Caps.ttf') format('truetype'),
+         url('../../fonts/cliente/TheMixSemiBold-Caps.svg#webfontZyy4cpE6') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'txbold';
+    src: url('../../fonts/cliente/TheMixExtraBold-Caps.eot');
+    src: url('../../fonts/cliente/TheMixExtraBold-Caps.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/cliente/TheMixExtraBold-Caps.woff') format('woff'),
+         url('../../fonts/cliente/TheMixExtraBold-Caps.ttf') format('truetype'),
+         url('../../fonts/cliente/TheMixExtraBold-Caps.svg#webfontZyy4cpE6') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/*==============================================================================
+  CUSTOM
+==============================================================================*/
+
+/*===========================
+  ESTILO
+============================*/
+.book {
+    font-family: "book" !important;
+}
+
+.light {
+    font-family: "light" !important;
+}
+
+.bold {
+    font-family: "bold" !important;
+}
+
+.xbold {
+    font-family: "bold" !important;
+}
+
+.book_italic {
+    font-family: "book" !important;
+    font-style: italic!important;
+}
+
+
+.light_italic  {
+    font-family: "light_italic" !important;
+}
+
+.bold_italic {
+    font-family: "bold_italic" !important;
+}
+
+
+
+.tblack {
+    font-family: "tblack" !important;
+}
+
+.tlight {
+    font-family: "tlight" !important;
+}
+
+.tbold {
+    font-family: "tbold" !important;
+}
+
+.txbold {
+    font-family: "txbold" !important;
+}

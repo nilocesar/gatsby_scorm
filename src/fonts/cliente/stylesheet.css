@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Formata';
+    src: url('Formata-Regular.eot');
+    src: url('Formata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Formata-Regular.woff2') format('woff2'),
+        url('Formata-Regular.woff') format('woff'),
+        url('Formata-Regular.ttf') format('truetype'),
+        url('Formata-Regular.svg#Formata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formata';
+    src: url('Formata-LightItalic.eot');
+    src: url('Formata-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Formata-LightItalic.woff2') format('woff2'),
+        url('Formata-LightItalic.woff') format('woff'),
+        url('Formata-LightItalic.ttf') format('truetype'),
+        url('Formata-LightItalic.svg#Formata-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'The Mix Extra Bold';
+    src: url('TheMixExtraBold-Caps.eot');
+    src: url('TheMixExtraBold-Caps.eot?#iefix') format('embedded-opentype'),
+        url('TheMixExtraBold-Caps.woff2') format('woff2'),
+        url('TheMixExtraBold-Caps.woff') format('woff'),
+        url('TheMixExtraBold-Caps.ttf') format('truetype'),
+        url('TheMixExtraBold-Caps.svg#TheMixExtraBold-Caps') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formata';
+    src: url('Formata-Light.eot');
+    src: url('Formata-Light.eot?#iefix') format('embedded-opentype'),
+        url('Formata-Light.woff2') format('woff2'),
+        url('Formata-Light.woff') format('woff'),
+        url('Formata-Light.ttf') format('truetype'),
+        url('Formata-Light.svg#Formata-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formata';
+    src: url('Formata-Bold.eot');
+    src: url('Formata-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Formata-Bold.woff2') format('woff2'),
+        url('Formata-Bold.woff') format('woff'),
+        url('Formata-Bold.ttf') format('truetype'),
+        url('Formata-Bold.svg#Formata-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Mix Light';
+    src: url('TheMixLight-Caps.eot');
+    src: url('TheMixLight-Caps.eot?#iefix') format('embedded-opentype'),
+        url('TheMixLight-Caps.woff2') format('woff2'),
+        url('TheMixLight-Caps.woff') format('woff'),
+        url('TheMixLight-Caps.ttf') format('truetype'),
+        url('TheMixLight-Caps.svg#TheMixLight-Caps') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Mix Black';
+    src: url('TheMixBlack-Caps.eot');
+    src: url('TheMixBlack-Caps.eot?#iefix') format('embedded-opentype'),
+        url('TheMixBlack-Caps.woff2') format('woff2'),
+        url('TheMixBlack-Caps.woff') format('woff'),
+        url('TheMixBlack-Caps.ttf') format('truetype'),
+        url('TheMixBlack-Caps.svg#TheMixBlack-Caps') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'The Mix Semi Bold';
+    src: url('TheMixSemiBold-Caps.eot');
+    src: url('TheMixSemiBold-Caps.eot?#iefix') format('embedded-opentype'),
+        url('TheMixSemiBold-Caps.woff2') format('woff2'),
+        url('TheMixSemiBold-Caps.woff') format('woff'),
+        url('TheMixSemiBold-Caps.ttf') format('truetype'),
+        url('TheMixSemiBold-Caps.svg#TheMixSemiBold-Caps') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+

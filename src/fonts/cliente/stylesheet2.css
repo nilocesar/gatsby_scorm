@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Formata';
+    src: url('Formata-BoldItalic.eot');
+    src: url('Formata-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Formata-BoldItalic.woff2') format('woff2'),
+        url('Formata-BoldItalic.woff') format('woff'),
+        url('Formata-BoldItalic.ttf') format('truetype'),
+        url('Formata-BoldItalic.svg#Formata-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
