@@ -8,6 +8,8 @@ import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import rootReducer from '.'; // the value from combineReducers
 
+import Init from './controller/init';
+
 const persistConfig = {
  key: 'root',
  storage: storage,
@@ -20,12 +22,18 @@ const store = createStore(pReducer);
 const persistor = persistStore(store);
 
 
-export default ({ element }) => (
-  <Provider store={store}>
+export default ({ element }) => 
+{
+
+  
+  return(
+    <Provider store={store}>
     
     <PersistGate loading={null} persistor={persistor}>
+      <Init></Init>
       {element}
     </PersistGate>
 
-  </Provider>
-)
+    </Provider>
+  )
+}
