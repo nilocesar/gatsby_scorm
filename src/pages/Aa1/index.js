@@ -32,7 +32,7 @@ const Aa1 = ({ indiceNav , dispatch }) => {
   }
 
   return (
-    <Layout setaPrev={false} setaNext={false}  nextEvent={true} >
+    <Layout setaPrev={false} setaNext={false} >
       <SEO title="AA1" />
       <S.container>
         <S.bg fluid={bg.childImageSharp.fluid}> </S.bg>

@@ -13,7 +13,8 @@ import Init from './controller/init';
 const persistConfig = {
  key: 'root',
  storage: storage,
- stateReconciler: autoMergeLevel2 // see "Merge Process" section for details.
+ stateReconciler: autoMergeLevel2,
+ blacklist: ['preloader'] // nao colocar o preloader na lista de persistencia
 };
 
 const pReducer = persistReducer(persistConfig, rootReducer);
@@ -24,8 +25,6 @@ const persistor = persistStore(store);
 
 export default ({ element }) => 
 {
-
-  
   return(
     <Provider store={store}>
     

@@ -4,12 +4,14 @@ import GlobalStyles from "../../styles/global"
 
 import Header from "../header";
 import Nav from "../nav";
+import { connect } from 'react-redux';
 
 import * as S from './styles'
 
 
-const layout = ({ children , setaPrev = true , setaNext = true }) => {
+const layout = ({ children , preStatus , dispatch , setaPrev = true , setaNext = true }) => {
 
+  
   return (
     <S.container>
 
@@ -19,6 +21,10 @@ const layout = ({ children , setaPrev = true , setaNext = true }) => {
         
         <Header></Header>
         <Nav setaPrev={setaPrev} setaNext={setaNext} ></Nav> 
+
+        <S.preloader isVisible={preStatus}>
+          <S.preloaderInt/>
+        </S.preloader>
 
     </S.container>
   )
@@ -30,4 +36,5 @@ layout.propTypes = {
   setaNext: PropTypes.bool
 }
 
-export default layout
+export default connect( state => ({ preStatus: state.preloader.preloaderStatus  }) 
+                                  , null )( layout )
