@@ -2,9 +2,10 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Curso Scorm Gatsby`,
+    description: `Controle do curso de Scomr Gatsby`,
+    author: `@nilocesar`,
+    siteUrl: `https://nilo250385.000webhostapp.com/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,20 +17,15 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-background-image-es5',
       options: {
@@ -37,19 +33,25 @@ module.exports = {
         specialChars: '/:',
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
-    // {
-    //   resolve: `gatsby-plugin-react-redux`,
-    //   options: {
-    //     pathToCreateStoreModule: './src/state/app',
-    //     serialize: {
-    //       space: 0,
-    //       isJSON: true,
-    //       unsafe: false,
-    //     },
-    //     cleanupOnClient: true,
-    //     windowKey: '__PRELOADED_STATE__',
-    //   }
-    // }
+    
   ],
 }
+
+const siteMetadata = module.exports.siteMetadata;
+
+module.exports.plugins.push(
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: siteMetadata.title,
+      short_name: `PWA Nilo`,
+      start_url: `/`,
+      background_color: `#FF453C`,
+      theme_color: `#070707`,
+      display: `minimal-ui`,
+      icon: `content/assets/icon.png`,
+      legacy: true,
+    },
+  });
