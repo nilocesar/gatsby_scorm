@@ -46,7 +46,7 @@ module.exports.plugins.push(
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: siteMetadata.title,
-      short_name: `PWA Nilo`,
+      short_name: `Scorm Gatsby`,
       start_url: `/`,
       background_color: `#070707`,
       theme_color: `#070707`,
